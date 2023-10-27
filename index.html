@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Compañía de Seguros</title>
+</head>
+<body>
+    <h1>Compañía de Seguros</h1>
+    <form action="procesar_formulario.php" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+
+        <div>
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <label for="tipo-seguro">Tipo de seguro:</label>
+        <select id="tipo-seguro" name="tipo-seguro" required>
+            <option value="Basico">Básico</option>
+            <option value="Intermedio">Intermedio</option>
+            <option value="Premium">Premium</option>
+        </select>
+
+        <div id="valor-seguro"></div>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
